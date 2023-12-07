@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input, button {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  border: none;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body main .greetings {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 10px 0 5px 7px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+}
+body main .greetings h1 {
+  font-size: 45px;
+  color: #b4ecb4;
+  text-shadow: 3px 3px 3px #0c2e0c;
+}
+body main .greetings .timeAndMoment span {
+  font-size: 25px;
+}
+body main .greetings .timeAndMoment .name {
+  color: #3aaf3a;
+  font-weight: bold;
+  font-size: 20px;
+}
+body main .greetings .timeAndMoment .name:focus {
+  color: white;
+}
+body main .greetings form {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 10px;
+}
+body main .greetings form input {
+  width: 70%;
+}
+body main .greetings form button {
+  cursor: pointer;
+  width: 30%;
+  background: #3aaf3a;
+  color: white;
+  font-weight: bold;
+}
+@media (max-width: 360px) {
+  body main .greetings h1 {
+    font-size: 25px;
+  }
+  body main .greetings .timeAndMoment span {
+    font-size: 20px;
+  }
+}
+body main .tasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 700px;
+  margin: 5px auto;
+  gap: 5px;
+}
+body main .tasks .active {
+  border-bottom: 2px solid green;
+}
+body main .tasks .option {
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px solid #cdf3d3;
+}
+body main .tasks .option:hover, body main .tasks .option:active {
+  border-bottom: 2px solid green;
+}
+body main .rotary {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  opacity: 0.3;
+}
+body main .rotary .exp {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border: 10px solid #b4ecb4;
+  border-radius: 50%;
+  background: transparent;
+}
+body main .rotary .exp::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #55bd55;
+  top: -15px;
+  left: 50%;
+}
+body main .plan {
+  width: 100%;
+  height: 100%;
+  background: white;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+}
+body main .plan .plans {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+body main .plan .plans p {
+  color: red;
+  text-align: center;
+}
+body main .plan .plans li {
+  width: 100%;
+  padding: 5px;
+  background: #b4ecb4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main .plan .plans li input {
+  height: 20px;
+  width: 20px;
+}
+body main .plan .plans li h4 {
+  font-size: 15px;
+  width: 100%;
+}
+body main .plan .plans li span {
+  color: gray;
+  font-size: 13px;
+}
+body main .plan .plans li p {
+  color: #0c2e0c;
+}
+body main .plan .plans li button {
+  color: white;
+  background: #3aaf3a;
+  font-weight: bold;
+  width: 20%;
+  cursor: pointer;
+}
+
+.pending {
+  border-bottom: 2px solid green;
+}/*# sourceMappingURL=style.css.map */

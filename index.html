@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <section class="greetings">
+            <h1 class="holder"></h1>
+            <div class="timeAndMoment">
+                <span class="moment"> Good Morning, </span>
+                <span class="name" contenteditable="true">{Your name}</span>
+            </div>
+            <form class="inputWrapper">
+                <input type="text" name="" placeholder="what's on your mind????" id="userplan">
+                <button type="submit" class="submit">Add plan</button>
+            </form>
+        </section>
+        <section class="tasks">
+            <div class="option" value="pending">Pending</div>
+            <div class="option" value="complete">Completed</div>
+        </section>
+        <section class="plan">
+            <p class="err"></p>
+            <ul class="plans"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
